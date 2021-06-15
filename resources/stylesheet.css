@@ -34,7 +34,6 @@ article.social-icons {
 
 figure {
     display: inline-block;
-    width: 48px;
 }
 
 img {
@@ -42,4 +41,32 @@ img {
     height: 48px;
 }
 
+table#profile-info{
+    height: 50px;
+    background-color: #4e4e4e;
+    padding: 0 10px;
+    position: relative;
+    top: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+}
 
+#profile-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#profile-info h1 {
+    font-size: 32px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+#profile-info h3 {
+    font-size: 20px;
+    line-height: 0.9;
+}
