@@ -55,16 +55,16 @@ body {
         color: black;
     }
     .item3 {
-        grid-row: 3;
         grid-column: 3;
+        grid-row: 2;
         background-image: url(media/001-linkedin.png);
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: center;
     }
     .item4 {
-        grid-row: 4;
         grid-column: 2;
+        grid-row: 3;
         background-image: url(media/006-github.png);
         background-size: 50%;
         background-repeat: no-repeat;
@@ -79,17 +79,25 @@ body {
         background-position: center;
     }
     .item6 {
+        grid-column: 3;
         grid-row: 4;
-        grid-column: 4;
         background-image: url(media/004-discord.png);
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: center;
     }
     .item7 {
-        grid-column: 3;
+        grid-column: 1;
         grid-row: 5;
         background-image: url(media/008-gmail.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .item8 {
+        grid-column: 5;
+        grid-row: 5;
+        background-image: url(media/007-facebook.png);
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: center;
