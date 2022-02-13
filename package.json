@@ -11,6 +11,7 @@
     "deploy": "npm run export && node gh-pages.js"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "next": "12.0.10",
     "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
