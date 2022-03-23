@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import { TableOfContentsFloating } from "./components/TableOfContentsFloating";
 
 const Home: NextPage = () => {
     return (
@@ -26,21 +27,65 @@ const Home: NextPage = () => {
                     <code className={styles.code}>pages/index.tsx</code>
                 </p>
 
+                <TableOfContentsFloating links= {[
+                    {
+                    "label": "Usage",
+                    "link": "#usage",
+                    "order": 1
+                    },
+                    {
+                    "label": "Position and placement",
+                    "link": "#position",
+                    "order": 1
+                    },
+                    {
+                    "label": "With other overlays",
+                    "link": "#overlays",
+                    "order": 1
+                    },
+                    {
+                    "label": "Manage focus",
+                    "link": "#focus",
+                    "order": 1
+                    },
+                    {
+                    "label": "Examples",
+                    "link": "#1",
+                    "order": 1
+                    },
+                    {
+                    "label": "Show on focus",
+                    "link": "#2",
+                    "order": 2
+                    },
+                    {
+                    "label": "Show on hover",
+                    "link": "#3",
+                    "order": 2
+                    },
+                    {
+                    "label": "With form",
+                    "link": "#4",
+                    "order": 2
+                    }
+                ]
+                }/>
                 <div className={styles.grid}>
-                    <Link href="/first-post"><a className={styles.card}>
+                    <Link href="/test"><a className={styles.card}>
                         <h2>Documentation &rarr;</h2>
                         <p>
                             My first post!
                         </p>
                     </a></Link>
 
-                    <a href="https://nextjs.org/learn" className={styles.card}>
-                        <h2>Learn &rarr;</h2>
-                        <p>
-                            Learn about Next.js in an interactive course with
-                            quizzes!
-                        </p>
-                    </a>
+                    <Link href="/project/tourist?pid=7">
+                        <a className={styles.card}>
+                            <h2>ID &rarr;</h2>
+                            <p>
+                                Check my ID
+                            </p>
+                        </a>
+                    </Link>
 
                     <a
                         href="https://github.com/vercel/next.js/tree/canary/examples"
@@ -52,7 +97,6 @@ const Home: NextPage = () => {
                             projects.
                         </p>
                     </a>
-
                     <a
                         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                         className={styles.card}
